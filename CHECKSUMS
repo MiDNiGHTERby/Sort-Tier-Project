@@ -1,0 +1,4 @@
+# CHECKSUMS
+# Linux/macOS: sha256sum sort-tier.py
+# Windows PowerShell: certutil -hashfile sort-tier.py SHA256
+21a93caf73e1f4eb63fee6c4898bf9a58d693cd26a016e26693e98e8143336ad  sort-tier.py
