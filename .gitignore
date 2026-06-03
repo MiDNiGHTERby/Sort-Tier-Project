@@ -1,32 +1,59 @@
-# Python
+# -------------------------
+# Python cache & artifacts
+# -------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual environments
 env/
 venv/
+.venv/
 .env
 .env.*
 
-# Logs and runtime
-organizer.log
+# -------------------------
+# Logs
+# -------------------------
 *.log
+organizer.log
 
-# Build / packaging
+# -------------------------
+# PyInstaller build output
+# -------------------------
 build/
 dist/
-*.egg-info/
 
-# IDEs
-.vscode/
+# -------------------------
+# IDE files
+# -------------------------
 .idea/
+.vscode/
 *.sublime-project
 *.sublime-workspace
 
-# OS
+# -------------------------
+# OS junk
+# -------------------------
 Thumbs.db
 .DS_Store
 
+# -------------------------
 # Temporary files
+# -------------------------
 *.tmp
 *.swp
+
+# -------------------------
+# Project-specific rules
+# -------------------------
+
+# Разрешаем EXE в output/
+# (output НЕ игнорируем!)
+#!output/
+#!output/*.exe
+
+# Игнорируем всё остальное в output, кроме exe
+#output/*
+#!output/*.exe
