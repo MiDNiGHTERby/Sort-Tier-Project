@@ -5,6 +5,7 @@ sort-tier.py
 
 Изменение: .iso теперь перемещается в целевую структуру (как обычные файлы).
 .exe и .msi по-прежнему копируются и остаются в исходной папке.
+.zip, 7z, .rar, .tar, .gz, .bz2, .xz также копируются, так как могут быть установщиками или архивами, которые пользователь хочет сохранить в исходной папке.
 """
 
 import os
@@ -60,7 +61,7 @@ GRAPHICS_EXTS = {
     "psd","psb","ai","eps","cdr","xcf","kra","sketch","ps","ora","pdn", "afphoto"
 }
 # .iso удалён из INSTALLER_EXTS — теперь перемещается как обычный файл
-INSTALLER_EXTS = {"exe","msi"}
+INSTALLER_EXTS = {"exe","msi", "zip", "7z", "rar", "tar", "gz", "bz2", "xz"}
 AUDIO_EXTS = {"mp3","m4a","flac","wav","aac","ogg","wma","alac", "m3u8"}
 # Добавляем iso в общий набор ALLOWED_EXTS, но не в INSTALLER_EXTS
 ALLOWED_EXTS = set()
