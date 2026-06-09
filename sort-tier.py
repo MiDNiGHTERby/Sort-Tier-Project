@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-sort-tier.py
+sort-tier-ui.py
 Финальная версия:
 - Прогрессбар только в консоли; в fallback включён verbose и прогрессбар отключён.
 - Логи операций на английском (для парсера), UI и комментарии на русском.
@@ -74,13 +74,13 @@ if os.name == 'nt':
 # -------------------------
 # Наборы расширений
 # -------------------------
-IMAGE_EXTS = {"jpg","jpeg","png","gif","bmp","webp","tiff","tif","svg"}
-AUDIO_EXTS = {"mp3","m4a","flac","wav","aac","ogg","wma","alac"}
-VIDEO_EXTS = {"mp4","mkv","mov","avi","wmv","flv","webm","m4v"}
-DOC_EXTS = {"pdf","doc","docx","odt","txt","rtf","xls","xlsx","csv","ppt","pptx","md"}
-GRAPHICS_EXTS = {"psd","psb","ai","eps","cdr","xcf","kra","sketch","ps","ora","pdn"}
-INSTALLER_EXTS = {"exe","msi"}
-ARCHIVE_EXTS = {"zip","rar","7z","tar","gz","bz2","xz","torrent"}  # добавлен torrent
+IMAGE_EXTS = {"jpg","jpeg","png","gif","bmp","webp","tiff","tif","raw"}
+AUDIO_EXTS = {"mp3","m4a","flac","wav","aac","ogg","wma","alac","opus"}
+VIDEO_EXTS = {"mp4","mkv","mov","avi","wmv","flv","webm","m4v", "mp3","mpeg","mpg","3gp"}
+DOC_EXTS = {"pdf","doc","docx","odt","txt","rtf","xls","xlsx","csv","ppt","pptx","md", "epub","fb2","djvu"}
+GRAPHICS_EXTS = {"psd","psb","ai","eps","cdr","xcf","kra","sketch","ps","ora","pdn", "afphoto", "afdesign"}
+INSTALLER_EXTS = {"exe","msi", "msix","appx","deb","rpm","pkg","dmg"}
+ARCHIVE_EXTS = {"zip","rar","7z","tar","gz","bz2","xz","torrent","cab","arj","lzma"}
 ISO_EXTS = {"iso"}
 
 ALLOWED_EXTS: Set[str] = set()
