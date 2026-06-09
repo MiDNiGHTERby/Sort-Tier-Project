@@ -16,8 +16,7 @@ venv/
 # -------------------------
 # Logs
 # -------------------------
-*.log
-organizer.log
+#*.log
 
 # -------------------------
 # PyInstaller build output
@@ -45,15 +44,6 @@ Thumbs.db
 # -------------------------
 *.tmp
 *.swp
-
-# -------------------------
-# Project-specific rules
-# -------------------------
-
-# Разрешаем EXE в output/
-# (output НЕ игнорируем!)
-#!output/
-#!output/*.exe
 
 # Игнорируем всё остальное в output, кроме exe
 #output/*
