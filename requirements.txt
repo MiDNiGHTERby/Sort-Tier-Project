@@ -1,5 +1,0 @@
-InquirerPy>=0.3.4
-pyfiglet>=0.8.0
-tqdm>=4.65.0
-nuitka>=1.5.0
-pyinstaller>=6.0.0
